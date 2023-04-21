@@ -1,0 +1,370 @@
+/*body*/
+/*header*/
+/*footer*/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*index.html*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  color: #2A363B;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+header {
+  background-color: #99B898;
+}
+
+/*barra de busqueda*/
+.section-search {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.section-search input {
+  width: 90%;
+  height: 3rem;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.section-search .a-buscar a {
+  margin-left: 10px;
+  padding: 5px;
+}
+.section-search .a-buscar a img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.banner-index {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.banner-index img {
+  width: 100%;
+  height: auto;
+}
+
+/*Pagina 2---iphone---*/
+.iphone {
+  display: flex;
+  font-size: 2.5rem;
+  align-content: center;
+  justify-content: start;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.iphone p {
+  font-size: 1.8rem;
+}
+.iphone a {
+  color: #2A363B;
+  font-size: 1.8rem;
+}
+.iphone a::after {
+  content: ">";
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/*Pagina-5 Login*/
+.login {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+  height: 4auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login form {
+  border: 4px solid #141e61;
+  border-radius: 10px;
+  padding: 4rem;
+}
+.login form label {
+  font-size: 2.4rem;
+}
+.login input {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #141E61;
+  border-radius: 1rem;
+  margin: auto;
+}
+.login .btn {
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+}
+.login .btn button {
+  background-color: #141E61;
+  box-shadow: 5px 5px 7px green;
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+}
+.login .btn button:hover {
+  background-color: green;
+  box-shadow: 5px 5px 7px #141E61;
+}
+
+.olvidaste {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+.olvidaste a {
+  color: blue;
+  padding: 20px;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: 0px;
+}
+.olvidaste a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.newsletter .suscribe {
+  grid-column: 1/2;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.newsletter .suscribe-1 {
+  grid-column: 2/3;
+  display: flex;
+}
+.newsletter .suscribe-1 input {
+  width: 75%;
+  height: 3rem;
+  border: 2px solid #371B58;
+  border-radius: 1rem;
+  padding: 2px;
+  font-size: 2rem;
+}
+.newsletter .suscribe-1 .sus a {
+  background-color: green;
+  box-shadow: 5px 5px 7px #141E61;
+  color: white;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 2px;
+}
+.newsletter .suscribe-1 .sus a:hover {
+  background-color: #141E61;
+  box-shadow: 5px 5px 7px green;
+}
+
+.slide-frame {
+  width: 320px;
+  height: 320px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  box-shadow: 5px 5px 7px #464545;
+}
+.slide-frame img {
+  width: 100%;
+}
+.slide-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 10s infinite alternate ease-in-out;
+}
+.slide-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/*cards de productos*/
+.card img {
+  transition-property: transform;
+  transition: 0.3s;
+}
+
+.card img:hover {
+  scale: 1.1;
+}
+
+/*footer*/
+.pto {
+  background-color: bisque;
+}
+
+.comprar {
+  background-color: #141E61;
+  box-shadow: 5px 5px 7px green;
+  color: none;
+}
+
+/*media query 1000*/
+@media (max-width: 1000px) {
+  .section-search img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .banner img {
+    width: 100%;
+    height: 20rem;
+  }
+  .newsletter {
+    display: block;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+  }
+  .newsletter p {
+    font-size: 2.4rem;
+  }
+  .newsletter .suscribe-1 input {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .mierror .error-2 ul li {
+    text-align: center;
+  }
+}
+/*media query 710*/
+@media (max-width: 710px) {
+  .banner img {
+    width: 100%;
+    height: 15rem;
+  }
+  .mierror .error-2 ul {
+    margin-top: 30rem;
+  }
+}
+/* media querry 600*/
+@media (max-width: 600px) {
+  .banner img {
+    width: 100%;
+    height: 10rem;
+  }
+  .olvidaste a {
+    font-size: 2rem;
+  }
+  .slide-frame {
+    width: 300px;
+    height: 300px;
+  }
+  .login {
+    width: 80%;
+    margin-left: 5rem;
+  }
+  label {
+    font-size: 1.6rem;
+  }
+  .newsletter p {
+    font-size: 2rem;
+  }
+  .newsletter .suscribe-1 input {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .mierror .error-2 p {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+  .mierror .error-2 ul {
+    margin-top: 15rem;
+  }
+}
+/*tipografia html*/
+.mierror {
+  width: 100%;
+  height: 100vh;
+  color: red;
+}
+.mierror .pagina404 {
+  width: 100%;
+  height: 10rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.mierror .pagina404 h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.mierror .pagina404 img {
+  width: 100%;
+  height: 400px;
+}
+.mierror .pagina404 h2 {
+  text-align: center;
+}
+.mierror .pagina404 p {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.mierror .pagina404 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.mierror .pagina404 ul li a {
+  color: rgb(12, 105, 12);
+}
+
+/*# sourceMappingURL=style.css.map */

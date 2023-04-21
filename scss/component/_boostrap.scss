@@ -1,0 +1,30 @@
+/*cards de productos*/
+
+.card{
+    img{
+        transition-property: transform;
+        transition: 0.3s;
+    
+    }
+}
+
+.card{
+    img{
+        &:hover{
+        scale: (1.1);
+        }
+    }
+}
+
+
+
+/*footer*/
+
+
+.pto{
+    background-color: bisque;
+}
+
+.comprar{
+    @include boton (#141E61, 5px 5px 7px green, none);
+}
